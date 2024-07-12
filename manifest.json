@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Temporary Tab Creator",
+    "version": "1.0",
+    "description": "Creates a temporary tab that closes after 24 hours.",
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "permissions": [
+      "storage",
+      "tabs",
+      "<all_urls>"
+    ],
+    "commands": {
+      "create-temp-tab": {
+        "suggested_key": {
+          "default": "Ctrl+Y"
+        },
+        "description": "Create a temporary tab"
+      }
+    }
+    
+  }
+  
